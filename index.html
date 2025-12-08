@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Created by CHUNG ZHENG on 2025/10/08 -->
-  <meta charset="UTF-8">
-  <title>chung final project</title>
-  <style>
-    .container{
-      background-color: #ffffff ;
-      max-width: 1200px;
-      padding: 0 120px;
-      
+  <head> <!-- Created by CHUNG ZHENG on 2025/10/08 -->
+    <meta charset="UTF-8">
+    <title>chung final project</title>
+    <style>
+      .mockup {
+        background-color: #000000;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
 
-    }
-  </style>
-</head>
+      .container {
+        background-color: #f5F5F7;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
-<body>
-<div class="container">
-    <h1>1200px Content Area</h1>
-  </div>
-</body>
+      h1 {
+        font-size: 40px;
+        color: #1d1d1f;
+      }
+
+      nav {
+        padding-top: 30px;
+        padding-right: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        overflow: hidden;
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        color: white;
+        text-align: center;
+        padding: 5px 50px;
+        text-decoration: none;
+      }
+
+      .nav_current {
+        background-color: #ffff00;
+        pointer-events: none;
+      }
+
+      .nav_current a {
+        color: #000000;
+      }
+
+      .nav_nocurrent {
+        background-color: #000000;
+      }
+
+      nav ul li a:hover {
+        background-color: #ffff00;
+        color: #000000;
+      }
+
+      .Slogan {
+        font-size: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mockup">
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="nav_current"><a href="/">Home</a></li>
+            <li class="nav_nocurrent"><a href="/">Menu</a></li>
+            <li class="nav_nocurrent"><a href="/">About</a></li>
+            <li class="nav_nocurrent"><a href="/">Contact</a></li>
+          </ul>
+        </nav>
+        <h1> <span class="Slogan">1200px Content Area</span> </h1>
+      </div>
+    </div>
+  </body>
 </html>

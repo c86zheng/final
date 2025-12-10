@@ -3,6 +3,9 @@
   <head> <!-- Created by CHUNG ZHENG on 2025/10/08 -->
     <meta charset="UTF-8">
     <title>chung final project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <style>
       .mockup {
         background-color: #000000;
@@ -16,13 +19,19 @@
         margin: 0 auto;
       }
 
-     h1 {
+      h1 {
         font-size: 40px;
         color: #1d1d1f;
       }
 
+      h2 {
+        font-family: "Montserrat", Bold;
+        font-size: 60px;
+        font-weight: 700;
+      }
+
       nav {
-        padding-top: 20px;
+        padding-top: 30px;
         padding-right: 10px;
       }
 
@@ -52,11 +61,11 @@
       }
 
       .nav_current a {
-        color: #000000;
+        color: #1d1d1f;
       }
 
       .nav_nocurrent {
-        background-color: #000000;
+        background-color: #1d1d1f;
       }
 
       nav ul li a:hover {
@@ -66,13 +75,11 @@
 
       .about {
         padding: 80px 0px 80px;
-        background-color: #f5f5f7;
       }
 
 
       .about-box {
         background-color: #d8d8d8;
-        padding: 40px 50px;
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 40px;
@@ -80,50 +87,58 @@
       }
 
       .about-title {
-        font-size: 28px;
+        padding: 100px 20px 0px;
         margin: 0 0 25px;
       }
 
       .about-body {
-        font-size: 14px;
+        padding: 0px 20px;
+        font-family: "Open Sans", Regular;
+        font-size: 25px;
+        font-weight: 400;
         letter-spacing: 0.06em;
         line-height: 1.4;
         margin: 0;
-        max-width: 420px;
+        max-width: 600px;
       }
 
       .about-photo {
-        width: 360px;
+        width: 390px;
         height: 450px;
         object-fit: cover;
       }
 
       .contact {
-        background-color: #000000;
+        background-color: #1d1d1f;
         color: #ffffff;
-        padding: 60px;
       }
 
       .contact-title {
         text-transform: uppercase;
-        font-size: 40px;
-        font-weight: 300;
-        margin: 0 0 20px;
+        margin: 0 10px 20px;
       }
-
-
 
       .contact-columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 80px;
-        font-size: 18px;
-        line-height: 1.4;
+        column-gap: auto;
+        font-size: 48px;
+        line-height: 1.0;
+
       }
 
       .contact-columns p {
         margin: 0;
+        padding: 10px 50px;
       }
+
+      .contact-columns p a {
+        color: #00ffff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 0;
+      }
+      
     </style>
   </head>
   <body>
@@ -141,47 +156,34 @@
 
           <div class="about-box">
             <div>
-              <p class="about-title">About me</p>
+              <h2 class="about-title">About me</h2>
               <p class="about-body">
-                I EXIST ONLY TO FILL SPACE AND DEMONSTRATE HOW
-                CONTENT WILL LOOK ONCE REAL TEXT IS ADDED.
-                PLEASE REPLACE ME WITH THE FINAL COPY WHEN IT
-                BECOMES AVAILABLE.
+                I’m a GBDA student at the University of Waterloo,
+                and this website is my independent project. It brings together my work, projects, and a brief
+                introduction to who I am.
               </p>
             </div>
 
             <div class="about-graphic">
-              <img src="profilepic.jpg" alt="About me photo" class="about-photo">
+              <img src="profilepic.jpg" alt="A photo web builder stand in front of camera and smile" class="about-photo">
             </div>
           </div>
         </div>
 
-        <!-- Contact section -->
         <div class="contact">
           <h2 class="contact-title">contact me</h2>
 
           <div class="contact-columns">
             <p>
+              email:&nbsp<a href="mailto:c86zheng@uwaterloo.ca">c86zheng@uwaterloo.ca </a>
+              <br>
+              <br>
+              instagram:&nbsp<a href="https://www.instagram.com/chungz.steven/?hl=zh-hk">Steven.Z </a><br>
+              <br>
               I am placeholder text.<br>
+              <br>
               I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.
-            </p>
-            <p>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.<br>
-              I am placeholder text.
+              <br>
             </p>
           </div>
         </div>

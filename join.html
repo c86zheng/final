@@ -18,7 +18,6 @@
         max-width: 1200px;
         padding-bottom: 40px;
         margin: 0 auto
-        
       }
 
       h1 {
@@ -30,12 +29,16 @@
         font-family: "Montserrat", Bold;
         font-size: 60px;
         font-weight: 700;
+        line-height: 0;
+        padding-top: 60px;
+        padding-left: 10px;
       }
+
 
       nav {
         padding-top: 30px;
         padding-right: 10px;
-         padding-bottom: 40px;
+        padding-bottom: 40px;
       }
 
       nav ul {
@@ -86,11 +89,10 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 40px;
-        align-items: flex-start;
       }
 
       .about-title {
-        padding: 100px 20px 0px;
+        padding: 100px 20px 10px;
         margin: 0 0 25px;
       }
 
@@ -115,7 +117,7 @@
       .contact {
         background-color: #1d1d1f;
         color: #ffffff;
-       
+
       }
 
       .contact-title {
@@ -133,7 +135,6 @@
       }
 
       .contact-columns p {
-        margin: 0;
         padding: 0px 50px;
       }
 
@@ -142,10 +143,51 @@
         text-decoration: none;
         display: inline-block;
       }
-      .contact-columns p a:visited{
-         color: #ff00ff;
+
+      .contact-columns p a:visited {
+        color: #ff00ff;
       }
-      
+
+      .preview {
+        background-color: #d8d8d8;
+        margin-bottom: 80px;
+        padding: 20px 0px 20px;
+      }
+
+      .preview-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* 明确写出三栏 */
+        gap: 24px;
+        padding: 0 20px 40px;
+      }
+
+      .preview-intro {
+        margin: 0px 20px 40px;
+        font-family: "Open Sans", Regular;
+        font-size: 22px;
+        line-height: 1.4;
+      }
+
+      .preview-card {
+        background-color: #ffffff;
+        overflow: hidden;
+      }
+
+      .preview-card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .preview-caption {
+        margin: 0px 20px 10px;
+        font-family: "Open Sans", Regular;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 8px;
+      }
     </style>
   </head>
   <body>
@@ -175,6 +217,33 @@
           </div>
         </div>
 
+        <h2 class="preview-title">Studio Preview</h2>
+        <div class="preview">
+          <p class="preview-intro">
+            Here are a few samples from our recent shoots. When you book a session with us,
+            we’ll work with you to create photos that feel personal, honest, and memorable.
+          </p>
+
+          <div class="preview-grid">
+            <div class="preview-card">
+              <img src="jvren.png" alt="Two people dressed in black and white outfits spinning together outdoors in front of a stone wall.">
+              <div class="preview-caption">Outdoor Lifestyle Photo</div>
+            </div>
+
+            <div class="preview-card">
+              <img src="pic2.jpg" alt="A white-haired character in elaborate clothing sitting on a reflective floor">
+              <div class="preview-caption">Studio Character Portrait</div>
+            </div>
+
+            <div class="preview-card">
+              <img src="lol.jpg" alt="A fantasy-themed female character with fox-like features sitting confidently on a throne surrounded by red glowing elements and shadowy figures.">
+              <div class="preview-caption">Fantasy Effects Portrait</div>
+            </div>
+          </div>
+        </div>
+
+
+
         <div class="contact">
           <h2 class="contact-title">contact us</h2>
 
@@ -187,6 +256,7 @@
             </p>
           </div>
         </div>
+
       </div>
     </div>
   </body>

@@ -115,36 +115,42 @@
       .contact {
         background-color: #1d1d1f;
         color: #ffffff;
-
+        padding-bottom: 30px;
       }
 
       .contact-title {
         margin: 0 10px 20px;
       }
 
-      .contact-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: auto;
-        font-size: 48px;
-        line-height: 1.0;
-
-      }
-
-      .contact-columns p {
-        margin: 0;
+      .contact-table {
         padding: 0px 50px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 1.6;
+        border-collapse: collapse;
       }
 
-      .contact-columns p a {
+      .contact-table td {
+        padding: 10px 20px;
+        vertical-align: top;
+      }
+
+      .contact-table td:first-child {
+        color: #f5F5F7;
+        text-transform: lowercase;
+        width: 180px;
+      }
+
+      .contact-table a {
         color: #00ffff;
         text-decoration: none;
         display: inline-block;
       }
 
-      .contact-columns p a:visited {
+      .contact-table a:visited {
         color: #ff00ff;
       }
+
 
       footer {
         background-color: #f5F5F7;
@@ -188,22 +194,28 @@
         <section class="contact">
           <h2 class="contact-title">contact me</h2>
 
-          <div class="contact-columns">
-            <p>
-              email:&nbsp<a href="mailto:c86zheng@uwaterloo.ca">c86zheng@uwaterloo.ca </a>
-              <br>
-              <br>
-              instagram:&nbsp<a href="https://www.instagram.com/chungz.steven/">Steven.Z </a>
-              <br>
-              <br>
-              bilibili:&nbsp<a href="https://space.bilibili.com/124421697">顾着臭不要脸 </a><br>
-              <br>
-              Phone:&nbsp<a href="">i wont tell you!</a> <br>
-              <br>
-            </p>
-          </div>
+
+            <table class="contact-table">
+              <tr>
+                <td>email:</td>
+                <td><a href="mailto:c86zheng@uwaterloo.ca">c86zheng@uwaterloo.ca</a></td>
+              </tr>
+              <tr>
+                <td>instagram:</td>
+                <td><a href="https://www.instagram.com/chungz.steven/">Steven.Z</a></td>
+              </tr>
+              <tr>
+                <td>bilibili:</td>
+                <td><a href="https://space.bilibili.com/124421697">顾着臭不要脸</a></td>
+              </tr>
+              <tr>
+                <td>phone:</td>
+                <td><a href="#">i wont tell you!</a></td>
+              </tr>
+            </table>
+        
         </section>
-        <footer>© 2025 CHUNG ZHENG</footer>   
+        <footer>© 2025 CHUNG ZHENG</footer>
       </div>
     </div>
 

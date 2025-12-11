@@ -26,11 +26,9 @@
 
       h2 {
         font-family: "Montserrat", Bold;
+         text-transform: uppercase;
         font-size: 60px;
         font-weight: 700;
-        line-height: 0;
-        padding-top: 60px;
-        padding-left: 10px;
       }
 
 
@@ -90,8 +88,9 @@
       }
 
       .about-title {
-        padding: 100px 20px 10px;
+         padding: 100px 20px 0px;
         margin: 0 0 25px;
+  
       }
 
       .about-body {
@@ -112,37 +111,42 @@
         object-fit: cover;
       }
 
-      .contact {
+       .contact {
         background-color: #1d1d1f;
         color: #ffffff;
-
+        padding-bottom: 30px;
       }
 
       .contact-title {
-        text-transform: uppercase;
         margin: 0 10px 20px;
       }
 
-      .contact-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: auto;
-        font-size: 48px;
-        line-height: 1.0;
-
-      }
-
-      .contact-columns p {
+      .contact-table {
         padding: 0px 50px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 1.6;
+        border-collapse: collapse;
       }
 
-      .contact-columns p a {
+      .contact-table td {
+        padding: 10px 20px;
+        vertical-align: top;
+      }
+
+      .contact-table td:first-child {
+        color: #f5F5F7;
+        text-transform: lowercase;
+        width: 180px;
+      }
+
+      .contact-table a {
         color: #00ffff;
         text-decoration: none;
         display: inline-block;
       }
 
-      .contact-columns p a:visited {
+      .contact-table a:visited {
         color: #ff00ff;
       }
 
@@ -155,7 +159,6 @@
       .preview-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* 明确写出三栏 */
         gap: 24px;
         padding: 0 20px 40px;
       }
@@ -253,17 +256,16 @@
 
 
 
-        <section class="contact">
+         <section class="contact">
           <h2 class="contact-title">contact us</h2>
-
-          <div class="contact-columns">
-            <p>
-              instagram:&nbsp<a href="https://www.instagram.com/this.isastudio/">this.isastudio</a>
-              <br>
-
-              <br>
-            </p>
-          </div>
+<table class="contact-table">
+           
+            
+            <tr>
+                <td>instagram:&nbsp</td>
+                <td><a href="https://www.instagram.com/this.isastudio/">this.isastudio</a></td>
+              </tr>
+          </table>
         </section>
 
         <footer>© 2025 CHUNG ZHENG</footer>

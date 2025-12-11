@@ -2,7 +2,10 @@
 <html lang="en">
   <head> <!-- Created by CHUNG ZHENG on 2025/10/08 -->
     <meta charset="UTF-8">
-    <title>chung final project - join</title>
+    <title>chung final project - about</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <style>
       .mockup {
         background-color: #000000;
@@ -13,22 +16,26 @@
       .container {
         background-color: #f5F5F7;
         max-width: 1200px;
-        margin: 0 auto;
+        padding-bottom: 40px;
+        margin: 0 auto
+        
       }
 
       h1 {
         font-size: 40px;
         color: #1d1d1f;
       }
-      
-      p{
-        font-size: 20px;
-        line-height: 1.4;
+
+      h2 {
+        font-family: "Montserrat", Bold;
+        font-size: 60px;
+        font-weight: 700;
       }
 
       nav {
         padding-top: 30px;
         padding-right: 10px;
+         padding-bottom: 40px;
       }
 
       nav ul {
@@ -69,6 +76,76 @@
         color: #000000;
       }
 
+      .about {
+        padding: 40px 0px 80px;
+      }
+
+
+      .about-box {
+        background-color: #d8d8d8;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 40px;
+        align-items: flex-start;
+      }
+
+      .about-title {
+        padding: 100px 20px 0px;
+        margin: 0 0 25px;
+      }
+
+      .about-body {
+        text-align: justify;
+        padding: 0px 20px;
+        font-family: "Open Sans", Regular;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        max-width: 600px;
+      }
+
+      .about-photo {
+        display: flex;
+        width: 390px;
+        height: 450px;
+        object-fit: cover;
+      }
+
+      .contact {
+        background-color: #1d1d1f;
+        color: #ffffff;
+       
+      }
+
+      .contact-title {
+        text-transform: uppercase;
+        margin: 0 10px 20px;
+      }
+
+      .contact-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: auto;
+        font-size: 48px;
+        line-height: 1.0;
+
+      }
+
+      .contact-columns p {
+        margin: 0;
+        padding: 0px 50px;
+      }
+
+      .contact-columns p a {
+        color: #00ffff;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .contact-columns p a:visited{
+         color: #ff00ff;
+      }
+      
     </style>
   </head>
   <body>
@@ -76,12 +153,40 @@
       <div class="container">
         <nav>
           <ul>
-            <li class="nav_nocurrent"><a href="https://c86zheng.github.io/final/home">Home</a></li>
-            <li class="nav_nocurrent"><a href="https://c86zheng.github.io/final/index">About</a></li>
-            <li class="nav_nocurrent"><a href="https://c86zheng.github.io/final/blog">Blog</a></li>
-            <li class="nav_current"><a >Join</a></li>
+            <li class="nav_nocurrent"><a href="home.html">Home</a></li>
+            <li class="nav_nocurrent"><a href="index.html">About</a></li>
+            <li class="nav_nocurrent"><a href="blog.html">Blog</a></li>
+            <li class="nav_current"><a href="join.html">Studio</a></li>
           </ul>
         </nav>
+        <div class="about">
+
+          <div class="about-box">
+            <div>
+              <h2 class="about-title">Join us</h2>
+              <p class="about-body">
+                I am one of the co-founders of our photography studio, where we currently have two talented photographers on our team. We welcome anyone looking for creative, professional photography services, and we are excited to bring their vision to life.
+              </p>
+            </div>
+
+            <div class="about-graphic">
+              <img src="head.jpg" alt="A photo web builder stand in front of camera and smile" class="about-photo">
+            </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h2 class="contact-title">contact us</h2>
+
+          <div class="contact-columns">
+            <p>
+              instagram:&nbsp<a href="https://www.instagram.com/this.isastudio/">this.isastudio</a>
+              <br>
+
+              <br>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
